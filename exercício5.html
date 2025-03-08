@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://sturdy-waffle-x5pgwjrjxgv5h9wp-5500.app.github.dev/exercicio5.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estilo</title>
+    <style>
+        body {
+            background-color: lightgray; /* Cor de fundo da página */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: purple; /* Cor da fonte */
+            font-size: 36px; /* Tamanho da fonte */
+        }
+
+        /* Estilo para o parágrafo com a classe .intro */
+        .intro {
+            color: #3498db; /* Cor do texto */
+            text-align: center; /* Alinhamento centralizado */
+            font-size: 20px; /* Tamanho da fonte */
+        }
+
+        /* Estilo para o parágrafo com a classe .descricao */
+        .descricao {
+            color: #2ecc71; /* Cor do texto */
+            text-align: justify; /* Alinhamento justificado */
+            font-size: 18px; /* Tamanho da fonte */
+        }
+
+        /* Estilos para os links */
+        a {
+            color: #007bff; /* Cor do link */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        a:hover {
+            color: #ff5733; /* Cor do link ao passar o mouse */
+        }
+
+        a:visited {
+            color: #800080; /* Cor do link visitado */
+        }
+
+        /* Estilizando o layout das colunas */
+        .coluna {
+            width: 45%; /* Tamanho de cada coluna */
+            float: left; /* Coloca as colunas lado a lado */
+            margin-right: 5%; /* Espaço entre as colunas */
+        }
+
+        .coluna h2 {
+            text-align: center; /* Alinha o título das colunas no centro */
+            color: #333; /* Cor do título */
+        }
+
+        /* Estilizando a div .caixa */
+        .caixa {
+            margin: 20px 0; /* Margem entre os elementos */
+            padding: 15px; /* Preenchimento interno */
+            background-color: #f4f4f4; /* Cor de fundo */
+        }
+
+        .caixa p {
+            font-size: 16px; /* Tamanho da fonte */
+            color: #333; /* Cor do texto */
+        }
+
+        /* Limpeza do float para as colunas */
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bloco 1 -->
+    <h1>Exercício 1 - Estilo de Título</h1>
+    <p>Este é um exemplo de título estilizado. A cor de fundo da página é cinza claro e o título está em roxo com 36px de tamanho.</p>
+    <br>
+
+    <!-- Bloco 2 -->
+    <h1>Exercício 2 - Links com Estilos</h1>
+    <ul>
+        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        <li><a href="https://www.github.com/" target="_blank">GitHub</a></li>
+    </ul>
+    <br>
+
+    <!-- Bloco 3 -->
+    <h1>Exercício 3 - Estilizando Parágrafos com Classes</h1>
+    <p class="intro">Bem-vindo à parte 3 do exercício!</p>
+    <p class="descricao">Terceiro módulo de aprendizado com estilos de texto.</p>
+    <br>
+
+    <!-- Bloco 4 -->
+    <h1>Exercício 4 - Layout com Duas Colunas</h1>
+    <div class="coluna">
+        <h2>Coluna 1</h2>
+        <p>Conteúdo da primeira coluna. Aqui você pode adicionar qualquer tipo de texto ou conteúdo que desejar.</p>
+    </div>
+    <div class="coluna">
+        <h2>Coluna 2</h2>
+        <p>Conteúdo da segunda coluna. O layout com duas colunas é muito útil para exibir informações lado a lado.</p>
+    </div>
+    <div class="clearfix"></div>
+    <br>
+
+    <!-- Bloco 5 -->
+    <h1>Exercício 5 - Aplicando Margem e Preenchimento</h1>
+    <div class="caixa">
+        <p>Este é um parágrafo dentro de uma div estilizada com margens e preenchimento.</p>
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
